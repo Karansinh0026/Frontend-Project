@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shreeji Pest Control - Blog</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        .hero-bg {
+            background-image: linear-gradient(to bottom, rgba(0,0,0,0.4), rgba(0,0,0,0.6)), 
+                            url('https://images.unsplash.com/photo-1627308595390-400d2c2f9b0f');
+            background-size: cover;
+            background-position: center;
+        }
+        .fade-in {
+            animation: fadeIn 1s ease-out;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        .logo-hover {
+            transition: transform 0.3s ease; /* Smooth transition for the zoom effect */
+        }
+        .logo-hover:hover {
+            transform: scale(1.1); /* Zooms in by 10% on hover */
+        }
+    </style>
+</head>
+<body class="bg-gray-100 font-sans">
+    <!-- Navbar -->
+    <nav class="fixed w-full bg-white shadow-lg z-10">
+        <div class="container mx-auto px-6 py-4 ">
+            <div class="flex justify-between items-center">
+                <!-- Logo with hover effect -->
+                <a href="grok.html" class="text-3xl font-bold">
+                    <img src="/images/Shreeji Pest Control LOGO.jpeg" alt="Shreeji Pest Control Logo" class="h-24 w-auto hover rounded-full"> 
+                </a>
+                <!-- Nav List for md size -->
+                <div class="hidden md:flex gap-8 font-bold sm:gap-5 fade-in">
+                    <a href="index.html" class="text-gray-700 hover:text-green-600 hover">Home</a>
+                    <a href="index.html#about" class="text-gray-700 hover:text-green-600 hover">About</a>
+                    <a href="index.html#services" class="text-gray-700 hover:text-green-600 hover">Services</a>
+                    <a href="index.html#testimonials" class="text-gray-700 hover:text-green-600 hover">Testimonials</a>
+                    <a href="index.html#faq" class="text-gray-700 hover:text-green-600 hover">FAQ</a>
+                    <a href="index.html#contact" class="text-gray-700 hover:text-green-600 hover">Contact</a>
+                    
+                </div>
+                <!-- button for Navbar mobile Menu -->
+                <button id="menu-btn" class="md:hidden text-2xl text-green-700">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+            <!-- Nav List for Mobile Menu -->
+            <div id="mobile-menu" class="md:hidden mt-4 pb-4 text-center font-bold fade-in">
+                <a href="index.html" class="block  py-2 text-gray-700 hover:text-green-600 hover">Home</a>
+                <a href="index.html#about" class="block py-2 text-gray-700 hover:text-green-600 hover">About</a>
+                <a href="index.html#services" class="block py-2 text-gray-700 hover:text-green-600 hover">Services</a>
+                <a href="index.html#testimonials" class="block py-2 text-gray-700 hover:text-green-600 hover">Testimonials</a>
+                <a href="index.html#faq" class="block py-2 text-gray-700 hover:text-green-600 hover">FAQ</a>
+                <a href="index.html#contact" class="block py-2 text-gray-700 hover:text-green-600 hover">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Blog Section -->
+    <section class="min-h-screen pt-20 bg-gray-50">
+        <div class="container mx-auto px-6 py-20 max-w-6xl">
+            <h1 class="text-4xl font-bold text-center text-gray-800 mb-12">Our Blog</h1>
+            <p class="text-lg text-gray-700 text-center mb-12 max-w-3xl mx-auto">Stay informed with the latest pest control tips, eco-friendly practices, and Shreeji Pest Control news.</p>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <!-- Ant infextion -->
+                <div class="bg-white p-6 rounded-lg shadow-lg fade-in">
+                    <img src="/images/Ants.jpg" alt="Ant Control Tips" class="rounded-lg w-full h-48 object-cover mb-4">
+                    <h3 class="text-2xl font-semibold text-gray-800 mb-4">Top 5 Tips to Prevent Ant Infestations</h3>
+                    <p class="text-lg text-gray-600 mb-4">Learn simple, eco-friendly ways to keep ants out of your home this season. From sealing cracks to using natural repellents, we’ve got you covered.</p>
+                    <a href="#" class="text-green-600 hover:text-green-700 font-semibold">Read More →</a>
+                </div>
+                <!-- Protect Home from Termites -->
+                <div class="bg-white p-6 rounded-lg shadow-lg fade-in">
+                    <img src="/images/Protect home.jpeg" alt="Termite Prevention" class="rounded-lg w-full h-48 object-cover mb-4">
+                    <h3 class="text-2xl font-semibold text-gray-800 mb-4">How to Protect Your Home from Termites</h3>
+                    <p class="text-lg text-gray-600 mb-4">Termites can cause serious damage if left unchecked. Discover our expert advice on early detection and prevention strategies.</p>
+                    <a href="#" class="text-green-600 hover:text-green-700 font-semibold">Read More →</a>
+                </div>
+                <!-- Eco Friendly Pest Control -->
+                <div class="bg-white p-6 rounded-lg shadow-lg fade-in">
+                    <img src="/images/Eco Friendly Pest Control.jpeg" alt="Eco-Friendly Pest Control" class="rounded-lg w-full h-48 object-cover mb-4">
+                    <h3 class="text-2xl font-semibold text-gray-800 mb-4">Why Choose Eco-Friendly Pest Control?</h3>
+                    <p class="text-lg text-gray-600 mb-4">Explore the benefits of green pest control solutions for your home and the environment, backed by Shreeji’s commitment to sustainability.</p>
+                    <a href="#" class="text-green-600 hover:text-green-700 font-semibold">Read More →</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-10">
+        <div class="container mx-auto px-6 max-w-6xl text-center">
+            <p class="text-lg mb-4">© 2025 Shreeji Pest Control. All rights reserved.</p>
+            <div class="flex justify-center space-x-6">
+                <a href="#" class="text-2xl hover:text-green-300"><i class="fab fa-facebook"></i></a>
+                <a href="#" class="text-2xl hover:text-green-300"><i class="fab fa-twitter"></i></a>
+                <a href="#" class="text-2xl hover:text-green-300"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById('menu-btn').addEventListener('click', () => {
+            document.getElementById('mobile-menu').classList.toggle('hidden');
+        });
+    </script>
+</body>
+</html>
